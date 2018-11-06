@@ -1,0 +1,57 @@
+
+
+1. Singleton
+
+Ensures that class has only one instance, in otherwords it ensures that only one instance of it is ever
+created.
+
+
+
+2. Module level Dunder Names ( Names with two leading and two trailing underscores such as __all__, __author__)
+Ref: https://www.python.org/dev/peps/pep-0008/?
+Should be placed after the docstring
+
+
+3.There are 5 cases for using the underscore in Python.
+
+Ref: https://hackernoon.com/understanding-the-underscore-of-python-309d1a029edc
+
+1. For storing the value of last expression in interpreter.
+Python stores last expression value to the special variable called "_".
+>>> 3+1
+4
+>>> _
+4
+
+2. For ignoring the specific values. (so-called “I don’t care”)
+
+#Ignore one value
+>>> x,_,y=(1,2,3)
+>>> x
+1
+>>> y
+3
+
+#Ignore multiple values
+>>> x,*_,y=(1,2,3,4,5,6,7)
+>>> x
+1
+>>> y
+7
+
+3. To give special meanings and functions to name of vartiables or functions.
+
+	_singe_leading_underscore
+	This convention is used for private variables, functions and classes and will be
+	ignored when "from module import *" is done.
+
+	single_trailing_underscore_
+	This is often used to avoid conflict with Python keywords
+
+	__double_leading_underscores
+	This is more of a syntax than a convention. This is used to mangle the attribute names
+	of a class to avoid conflics of attribute names between classes.
+
+4. To use as ‘Internationalization(i18n)’ or ‘Localization(l10n)’ functions.
+5. To separate the digits of number literal value.
+

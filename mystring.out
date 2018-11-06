@@ -1,0 +1,36 @@
+[root@rhce6 final]# python mystring.py x
+('Input : ', 'x')
+('Output:', 'User Error: String should have at least two chars!!!')
+
+[root@rhce6 final]# python mystring.py xx
+('Input : ', 'xx')
+('Output:', 0)
+
+[root@rhce6 final]# python mystring.py xp
+('Input : ', 'xp')
+('Output:', 2)
+
+[root@rhce6 final]# python mystring.py xpq
+('Input : ', 'xpq')
+('Output:', 3)
+
+[root@rhce6 final]# python mystring.py xpqaaa
+('Input : ', 'xpqaaa')
+('Output:', 4)
+
+[root@rhce6 final]# python mystring.py aaaxpq
+('Input : ', 'aaaxpq')
+('Output:', 4)
+
+[root@rhce6 final]# python mystring.py aaaxpqr
+('Input : ', 'aaaxpqr')
+('Output:', 5)
+
+[root@rhce6 final]# python mystring.py aaaxpqrbbbb
+('Input : ', 'aaaxpqrbbbb')
+('Output:', 6)
+
+[root@rhce6 final]# python mystring.py aaaxpqrbbbbcdefgh
+('Input : ', 'aaaxpqrbbbbcdefgh')
+('Output:', 7)
+

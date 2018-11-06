@@ -1,0 +1,4 @@
+python3 wordcloud.py
+['Jack', 'and', 'Jill', 'went', 'up', 'the', 'hill', '', 'Jack', 'fell', 'down', 'and', 'Jill', 'came', 'tumbling']
+{'Jack': 2, 'and': 2, 'Jill': 2, 'went': 1, 'up': 1, 'the': 1, 'hill': 1, '': 1, 'fell': 1, 'down': 1, 'came': 1, 'tumbling': 1}
+
